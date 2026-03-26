@@ -1,0 +1,11 @@
+@nsobid-B73BF75FEB33ABC5B4B732EB7C4F4EDD
+
+# Sphinx and the Cursed Mummy™ Ver. 1.1
+
+@flag offset_shift 0x100
+
+// Disable (missing) "Project Shadow" (forces simple shadows during gameplay)
+@disabled
+0005FBA5 42
+
+@stop
