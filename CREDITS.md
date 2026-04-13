@@ -9,7 +9,7 @@ for cross-format testing.
 |------|---------|------|
 | Flips | BPS, IPS | [disroot.org](https://git.disroot.org/Sir_Walrus/Flips) |
 | sips | IPS32 | [github](https://github.com/leoetlino/sips) |
-| RomPatcher.js | EBP, PPF1, PPF2, APS (N64), RUP | [github](https://github.com/marcrobledo/RomPatcher.js) |
+| RomPatcher.js | EBP, PPF1, PPF2, APS (N64), NINJA2 | [github](https://github.com/marcrobledo/RomPatcher.js) |
 | MakePPF3 | PPF3 | [romhacking.net](https://www.romhacking.net/utilities/353/) |
 | xdelta3 | VCDIFF | [github](https://github.com/jmacd/xdelta) |
 | bsdiff | BSDiff | [daemonology.net](https://www.daemonology.net/bsdiff/) |
