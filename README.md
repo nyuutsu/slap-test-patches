@@ -65,7 +65,6 @@ base ROM is missing.
 | Game | File | Path | CRC32 |
 |------|------|------|-------|
 | Yu-Gi-Oh! Duel Monsters 4: Battle of Great Duelist - Yuugi Deck (Japan) | base.gbc | dm4y/ | `4d6105f6` |
-| Pokemon Emerald (USA) | base.gba | emerald/ | `1f1c08fb` |
 | Pokemon Stadium 2 (USA) | base.z64 | stadium2/ | `a9998e09` |
 | Fire Emblem: The Binding Blade (Japan) | base.gba | fe6/ | `d38763e1` |
 | Final Fantasy Tactics Advance (USA) | base.gba | ffta/ | `5645e56c` |
