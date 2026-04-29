@@ -15,13 +15,25 @@ Many patch files in this repository are other people's work. See `CREDITS.md` fo
 The test suite has four classifications:
 
 * Real: a real-world patch from some actual project
-* Converted: a "real" patch repackaged into a different patch format\*
-* Synthetic: the patch target was fabricated (e.g. via PRNG XOR).\*\*
+* Converted: a "real" patch repackaged into a different patch format
+* Synthetic: the patch target was fabricated (e.g. via PRNG XOR).
 * Broken: a known-broken patch, skipped by the runner. Unused at time of writing.
 
-\* We apply the patch to the input rom using some outside tool (such as, say, [flips](https://git.disroot.org/Sir_Walrus/Flips)), producing an output rom. We use some tool (say, [xdelta3](https://github.com/xorgy/xdelta3)), the input rom, and the output from to create a patch in a different format.
+We now have some patches that I feel do not cleanly fit into any of the above categories. The distinguishing property they have, is that the following procedure was used to create them:
 
-\*\* We take some rom and make a bunch of changes to a copy of it. We then use some outside tool, the input rom, and the output rom to create a patch.
+1. Prepare an input rom and output rom somehow[^somehow]
+
+2. Use slap to create a patch
+
+3. Use some well-regarded tool to make a patch in the same format with same input
+
+4. Use slap to apply each patch; record hashes
+
+5. Use the external tool to apply each patch; record hashes
+
+6. If all hashes agree then we can be fairly confident that the patch is *probably correct*
+
+This is sort of a different axis of "how confident are we about this patch?" vs what lineage is tracking.
 
 ## Suite format
 
@@ -82,3 +94,7 @@ base ROM is missing.
 ## License
 
 MIT
+
+# Footnotes
+
+[^somehow]: dm4y's output state is a development build of my dm4 translation hack. Stadium 2's output state (which probably is not bootable; I haven't checked) is just the base game with some swaps, copies, transforms, etc done in a mostly clustered way.
