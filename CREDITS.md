@@ -16,9 +16,6 @@ These are patches from actual projects that were especially helpful to our early
 | PMMQ Jr 1.5.1.2 | PMSR/Yay0 | Paper Mario | Brotenko et al. | [github](https://github.com/Brotenko/PMMasterQuest) |
 | Dracula X English v1.0 | PPF3 | Castlevania: SotN | Gemini et al. | [romhacking.net](https://www.romhacking.net/translations/1427/) |
 | Banjo-Tooie NTSC Crack | APS (N64) | Banjo-Tooie | Dextrose (LaC) | [micro-64.com](http://micro-64.com/database/patches.shtml) |
-| OatmealDome patches | PCHTXT | Splatoon 2 | OatmealDome | [github](https://github.com/OatmealDome/Splatoon-2-Misc-Patches) |
-| Coxxs patches | PCHTXT | Splatoon 3 | Coxxs | [github](https://github.com/Coxxs/public-pchtxt) |
-| Wollnashorn patches | PCHTXT | Tears of the Kingdom | Wollnashorn | [github](https://github.com/Wollnashorn/switch-mods) |
 
 # Footnotes
 
