@@ -10,3 +10,7 @@
 *.iso
 *.img
 *.cue
+*.nes
+*.fds
+# The author's readme forbids redistribution; see README.md for how to place it locally.
+wrecking-crew/constructors/patch.xdelta

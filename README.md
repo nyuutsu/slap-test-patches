@@ -28,6 +28,10 @@ Tests apply patches against base ROM files that you provide. Place each file at 
 | Splatoon 2 v5.0.0 (decompressed NSO) | base.nso | splatoon2/ | `ff45a757` |
 | Splatoon 3 v7.0.0 (decompressed NSO) | base.nso | splatoon3/ | `f3749928` |
 | Tears of the Kingdom v1.1.0 (decompressed NSO) | base.nso | totk/ | `c11a9a2c` |
+| Karateka (Japan) | base.nes | karateka/ | `e9bad787` |
+| Wrecking Crew (Japan) (Disk Writer) | base.fds | wrecking-crew/ | `68b88428` |
+
+One patch is present locally but not committed: `wrecking-crew/constructors/patch.xdelta`, whose author's readme forbids redistribution (再配布・転載不可). Obtain it from romhacking.net entry 2616 and place it at that path; the test harness skips its row when the file is missing, the same way it skips missing base ROMs.
 
 ## License
 

@@ -16,6 +16,8 @@ These are patches from actual projects that were especially helpful to our early
 | PMMQ Jr 1.5.1.2 | PMSR/Yay0 | Paper Mario | Brotenko et al. | [github](https://github.com/Brotenko/PMMasterQuest) |
 | Dracula X English v1.0 | PPF3 | Castlevania: SotN | Gemini et al. | [romhacking.net](https://www.romhacking.net/translations/1427/) |
 | Banjo-Tooie NTSC Crack | APS (N64) | Banjo-Tooie | Dextrose (LaC) | [micro-64.com](http://micro-64.com/database/patches.shtml) |
+| Karateka Indonesian translation (+ hack variant) | VCDIFF | Karateka | AF | romhacking.net entry 6516 |
+| Pokemon Stadium 2 Debug Menu Patch v1 | VCDIFF | Pokémon Stadium 2 | jrra | romhacking.net entry 4771 |
 
 # Footnotes
 
