@@ -12,5 +12,7 @@
 *.cue
 *.nes
 *.fds
+# vcdiff-custom-table's sources are generated synthetics, not ROM images.
+!vcdiff-custom-table/*.bin
 # The author's readme forbids redistribution; see README.md for how to place it locally.
 wrecking-crew/constructors/patch.xdelta
