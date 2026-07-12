@@ -148,21 +148,22 @@ fixtureA_expected = b"HELLO"
 
 # --- fixture B: nested custom table -----------------------------------------
 # The inner delta is itself a patch declaring VCD_CODETABLE. RFC §7c forbids it.
-# Expected: refused, "nested custom code tables are not allowed".
+# Expected: refused, "slap can't find a place to start reading this patch's
+# instruction table".
 inner_nested = (MAGIC + bytes([0x00, 0x02]) + varint(2) + bytes([4, 3])
                 + window(0x00, 5, b"HELLO", ADD5, b""))
 fixtureB = custom_table_patch(4, 3, inner_nested,
                               window(0x00, 5, b"HELLO", ADD5, b""))
-fixtureB_expected = "refused: nested custom code tables are not allowed"
+fixtureB_expected = "refused: slap can't find a place to start reading this patch's instruction table"
 
 # --- fixture C: inner delta yields an invalid entry -------------------------
 # Poke types1[0] to 4 (no such instruction type; COPY=3 is the max).
-# Expected: refused, "while decoding the custom code table: ... invalid
-# instruction type in code table: 4".
+# Expected: refused, "the instruction table this patch brought with it names an
+# instruction that doesn't exist" (type byte 4).
 imageC = poke(DEFAULT_IMAGE, TYPES1 + 0, 0x04)
 fixtureC = custom_table_patch(4, 3, inner_delta_for(imageC),
                               window(0x00, 5, b"HELLO", ADD5, b""))
-fixtureC_expected = "refused: while decoding the custom code table: invalid instruction type 4"
+fixtureC_expected = "refused: the instruction table this patch brought with it names an instruction that doesn't exist"
 
 # --- fixture D: a do-nothing (NOOP+NOOP) entry ------------------------------
 # Poke entry 1 (ADD size 0) to type NOOP, leaving size 0 / mode 0 / second NOOP:
@@ -192,12 +193,13 @@ fixtureE_expected = b"3456"
 # --- fixture F: a COPY mode the declared caches do not reach -----------------
 # s_near=4 s_same=3 -> highest mode is 8. Poke entry 19's mode (a COPY) to 9.
 # deserialize carries the mode verbatim; the table-build mode check rejects it.
-# Expected: refused, "while decoding the custom code table: ... COPY address
-# mode 9 ... reach only mode 8".
+# Expected: refused, "the instruction table this patch brought with it doesn't
+# agree with itself about how copy addresses are written" (mode 9, modes 0
+# through 8 defined).
 imageF = poke(DEFAULT_IMAGE, MODES1 + 19, 9)
 fixtureF = custom_table_patch(4, 3, inner_delta_for(imageF),
                               window(0x00, 5, b"HELLO", ADD5, b""))
-fixtureF_expected = "refused: while decoding the custom code table: COPY mode 9 out of range (max 8)"
+fixtureF_expected = "refused: the instruction table this patch brought with it doesn't agree with itself about how copy addresses are written"
 
 
 def main() -> None:
