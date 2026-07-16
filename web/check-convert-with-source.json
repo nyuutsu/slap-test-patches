@@ -1,0 +1,12 @@
+{
+  "declaredConvertTargetFormat": { "tag": "CreateDirect", "contents": "CreateIPS" },
+  "declaredConvertSourceFraming": { "tag": "TakeInputAsIs" },
+  "declaredConvertVerificationPolicy": "EnforceVerification",
+  "declaredConvertMetadata": {
+    "requestedFileIdDiz": { "tag": "InheritFileIdDiz" },
+    "requestedEmbeddedBlob": { "tag": "InheritEmbeddedBlob" }
+  },
+  "declaredConvertConstraints": { "requestedSMCShape": "AllowAnyTruncationShape" },
+  "declaredConvertMetadataEncoding": "utf-8",
+  "declaredConvertDialects": { "requestedPPF1Origin": "PPF1OriginPC" }
+}

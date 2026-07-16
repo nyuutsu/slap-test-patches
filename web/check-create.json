@@ -1,0 +1,10 @@
+{
+  "declaredCreateTargetFormat": { "tag": "CreateDifferential", "contents": "CreateBPS" },
+  "declaredCreateOriginalName": "base.gbc",
+  "declaredCreateModifiedName": "patched.gbc",
+  "declaredCreateMetadata": {
+    "requestedFileIdDiz": { "tag": "InheritFileIdDiz" },
+    "requestedEmbeddedBlob": { "tag": "InheritEmbeddedBlob" }
+  },
+  "declaredCreateConstraints": { "requestedSMCShape": "AllowAnyTruncationShape" }
+}

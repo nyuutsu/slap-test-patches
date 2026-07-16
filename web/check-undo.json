@@ -1,0 +1,4 @@
+{
+  "declaredUndoVerificationPolicy": "EnforceVerification",
+  "declaredUndoDialects": { "requestedPPF1Origin": "PPF1OriginPC" }
+}
