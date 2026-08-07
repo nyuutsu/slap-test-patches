@@ -8,5 +8,5 @@
   },
   "declaredConvertConstraints": { "requestedSMCShape": "AllowAnyTruncationShape" },
   "declaredConvertMetadataEncoding": "utf-8",
-  "declaredConvertDialects": { "requestedPPF1Origin": "PPF1OriginPC" }
+  "declaredConvertDialects": { "requestedPatchOrigin": "OriginPC" }
 }

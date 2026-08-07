@@ -1,4 +1,4 @@
 {
   "declaredInspectMetadataEncoding": "utf-8",
-  "declaredInspectDialects": { "requestedPPF1Origin": "PPF1OriginPC" }
+  "declaredInspectDialects": { "requestedPatchOrigin": "OriginPC" }
 }

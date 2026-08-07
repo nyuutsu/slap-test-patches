@@ -1,5 +1,5 @@
 {
   "declaredApplyFraming": { "tag": "TakeInputAsIs" },
   "declaredApplyVerificationPolicy": "EnforceVerification",
-  "declaredApplyDialects": { "requestedPPF1Origin": "PPF1OriginPC" }
+  "declaredApplyDialects": { "requestedPatchOrigin": "OriginPC" }
 }

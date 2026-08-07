@@ -1,4 +1,4 @@
 {
-  "declaredIdentifyDialects": { "requestedPPF1Origin": "PPF1OriginPC" },
+  "declaredIdentifyDialects": { "requestedPatchOrigin": "OriginPC" },
   "declaredIdentifyMetadataEncoding": "utf-8"
 }
